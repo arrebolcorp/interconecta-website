@@ -1,0 +1,158 @@
+/* Estilos para la página de Planes de Consultorios */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-color: #1A69FA;
+  --primary-light: rgba(26, 105, 250, 0.1);
+  --secondary-color: #0F47B3;
+  --background-highlight: #DEEEFF;
+  --title-color: #1C1C28;
+  --text-primary: #2F2F3A;
+  --text-secondary: #6C6C84;
+  --border-subtle: #D8E4F9;
+  --component-bg: #FFFFFF;
+  --alt-bg: #F5F9FF;
+  --esencial-color: #1A69FA;
+  --pro-color: #2E9D4C;
+  --premium-color: #E23838;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --border-radius: 12px;
+  --transition-normal: all 0.3s ease;
+}
+
+/* Cambios en nombres de clases relacionados a Process.jsx */
+.implement-section {
+  padding: 80px 0;
+  background-color: var(--alt-bg);
+}
+
+.implement-steps {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.implement-steps::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  background-color: var(--border-subtle);
+}
+
+.implement-step {
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.implement-step:nth-child(1) { animation-delay: 0.1s; }
+.implement-step:nth-child(2) { animation-delay: 0.2s; }
+.implement-step:nth-child(3) { animation-delay: 0.3s; }
+.implement-step:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.implement-step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.implement-number {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-right: 30px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(26, 105, 250, 0.3);
+  transition: var(--transition-normal);
+}
+
+.implement-number:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.implement-content {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.implement-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 10px;
+  transition: var(--transition-normal);
+}
+
+.implement-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  transition: var(--transition-normal);
+}
+
+.implement-step:hover .implement-title {
+  color: var(--primary-color);
+}
+
+.implement-step:hover .implement-description {
+  color: var(--text-primary);
+}
+
+.implement-mt-50 {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .implement-steps::before {
+    left: 30px;
+  }
+  .implement-number {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  .implement-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .implement-step {
+    flex-direction: column;
+  }
+  .implement-steps::before {
+    display: none;
+  }
+  .implement-number {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .implement-content {
+    padding-top: 0;
+  }
+}

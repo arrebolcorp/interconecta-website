@@ -1,0 +1,126 @@
+.reuniones-section {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-color: #F5F9FF;
+    min-height: 100vh;
+  }
+  
+  .reuniones-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .verificacion-box {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .verificacion-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1C1C28;
+    margin-bottom: 1rem;
+  }
+  
+  .verificacion-subtitle {
+    font-size: 1.125rem;
+    color: #6C6C84;
+    margin-bottom: 2rem;
+  }
+  
+  .verificacion-button {
+    background-color: #1A69FA;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verificacion-button:hover {
+    background-color: #0F47B3;
+  }
+  
+  .card-reuniones {
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1C1C28;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .iframe-container {
+    border-radius: 1.25rem;
+    overflow-x: auto; /* Agrega scroll horizontal en móviles */
+    overflow-y: hidden;
+    width: 100%;
+    height: 650px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .iframe-container {
+      height: 500px;
+      max-height: 90vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .iframe-container {
+      height: 450px;
+      max-height: 85vh;
+    }
+  }
+  
+  .iframe-container iframe {
+    min-width: 800px; /* fuerza el iframe a una vista adecuada */
+    height: 100%;
+    border: none;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .card-reuniones {
+      padding: 1.5rem;
+    }
+  
+    .card-title {
+      font-size: 1.25rem;
+    }
+  
+    .verificacion-title {
+      font-size: 1.5rem;
+    }
+  
+    .verificacion-subtitle {
+      font-size: 1rem;
+    }
+  
+    .iframe-container {
+        border-radius: 1.25rem;
+        overflow-x: auto; /* Agrega scroll horizontal en móviles */
+        overflow-y: hidden;
+        width: 100%;
+        height: 650px;
+        max-width: 100%;    }
+  }
+  .captcha-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

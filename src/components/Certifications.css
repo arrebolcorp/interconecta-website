@@ -1,0 +1,48 @@
+.certifications-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .certifications-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .certifications-title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1c1c28;
+    margin-bottom: 10px;
+  }
+  
+  .certifications-title p {
+    font-size: 16px;
+    color: #6c6c84;
+    margin-bottom: 40px;
+  }
+  
+  .certifications-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .cert-logo img {
+    height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  
+  .cert-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  

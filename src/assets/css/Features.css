@@ -1,0 +1,109 @@
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-color: var(--component-bg);
+  }
+  
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 15px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .feature-card {
+    background-color: #f5f9ff;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(26, 105, 250, 0.1);
+  }
+  
+  .feature-icon {
+    background-color: #deeeff; /* mismo color que fondo azul claro */
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-icon img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 12px; /* o usa 50% si quieres totalmente circular */
+  }
+  
+  .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 12px;
+  }
+  
+  .feature-description {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  /* Responsive para features section */
+  @media (max-width: 992px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+      font-size: 28px;
+    }
+  }
+
+  .features-section .section-header {
+    margin-bottom: 2rem; /* antes probablemente 4rem o más */
+  }
+  
+  .features-section .section-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .features-section .section-subtitle {
+    margin-bottom: 0; /* Elimina separación extra */
+  }
+  

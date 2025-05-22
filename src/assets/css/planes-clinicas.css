@@ -1,0 +1,257 @@
+/* Estilos para la página de Planes para Clínicas */
+.clinicx-container {
+  font-family: 'Sora', sans-serif;
+  color: var(--text-primary);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.clinicx-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--background-highlight);
+  border-radius: var(--border-radius);
+}
+
+.clinicx-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.clinicx-hero p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.clinicx-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.clinicx-tab-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.clinicx-tab {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--component-bg);
+  border: 2px solid var(--border-subtle);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.clinicx-tab.active {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.clinicx-compare {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--alt-bg);
+  border: 2px solid var(--border-subtle);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.clinicx-compare.active {
+  background-color: var(--background-highlight);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.clinicx-card {
+  background-color: var(--component-bg);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border-subtle);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.clinicx-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+
+.clinicx-header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.clinicx-icon {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.clinicx-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.clinicx-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.clinicx-pricing {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.clinicx-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.clinicx-period {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.clinicx-setup {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.clinicx-benefits {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.clinicx-solution {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.clinicx-features {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.clinicx-features li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.clinicx-check {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.clinicx-cta {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.clinicx-cta:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.clinicx-dashboard {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.clinicx-dashboard-box {
+  background-color: var(--component-bg);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border-subtle);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.clinicx-dashboard-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.clinicx-dashboard-list {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.clinicx-dashboard-list li {
+  padding: 0.5rem 0;
+}
+
+.clinicx-dashboard-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .clinicx-tab-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .clinicx-tab {
+    width: 100%;
+    text-align: center;
+  }
+  .clinicx-compare {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-icon-pulse {
+  font-size: 2rem;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}

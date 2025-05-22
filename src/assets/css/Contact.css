@@ -1,0 +1,193 @@
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background-color: var(--component-bg);
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--alt-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.contact-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.benefit-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-highlight);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.benefit-icon-inner {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.benefit-item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  background-color: var(--component-bg);
+  padding: 40px;
+}
+
+.contact-form {
+  max-width: 500px;
+}
+
+.form-header {
+  margin-bottom: 25px;
+}
+
+.form-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--text-primary);
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.input-error {
+  border-color: var(--color-dominio);
+  box-shadow: 0 0 0 2px rgba(226, 56, 56, 0.1);
+}
+
+.error-msg {
+  color: var(--color-dominio);
+  font-size: 12px;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+/* Form Success Message */
+.toast-success {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive para la sección de contacto */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-content,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+  .contact-benefits {
+    justify-content: space-between;
+  }
+  .benefit-item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-content,
+  .contact-form-wrapper {
+    padding: 30px;
+  }
+  .contact-title {
+    font-size: 28px;
+  }
+  .contact-benefits {
+    flex-direction: column;
+  }
+}
+.contact-form-wrapper {
+  background-color: var(--component-bg);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.error-msg {
+  color: var(--color-dominio);
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}

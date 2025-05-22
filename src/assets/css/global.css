@@ -1,0 +1,139 @@
+:root {
+    /* Paleta de colores de Interconecta Capital */
+    --primary: #1A69FA; /* Azul institucional */
+    --primary-dark: #0F47B3; /* Acento intenso */
+    --background-highlight: #DEEEFF; /* Fondo suave */
+    --title-color: #1C1C28; /* Texto fuerte */
+    --text-primary: #2F2F3A; /* Texto base */
+    --text-secondary: #6C6C84; /* Texto de apoyo */
+    --border-subtle: #D8E4F9; /* Bordes suaves */
+    --component-bg: #FFFFFF; /* Fondos de componentes */
+    --alt-bg: #F5F9FF; /* Fondo alterno */
+    
+    /* Planes */
+    --impulso: #1A69FA; /* Plan Impulso (azul) */
+    --crecimiento: #2E9D4C; /* Plan Crecimiento (verde) */
+    --dominio: #E23838; /* Plan Dominio (rojo) */
+  }
+
+  @import './main.css';
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Sora', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--alt-bg);
+    line-height: 1.6;
+  }
+  
+  /* Clases de utilidad */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos de botones */
+  .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    border: 2px solid transparent;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-outline:hover {
+    background-color: rgba(26, 105, 250, 0.1);
+  }
+  
+  .btn-full {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Clases de utilidad para espacio */
+  .mt-50 {
+    margin-top: 50px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Estilos para los encabezados de sección */
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 15px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Media queries generales */
+  @media (max-width: 992px) {
+    .section-title {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 28px;
+    }
+    
+    .section-subtitle {
+      font-size: 16px;
+    }
+  }
+  .reuniones-section {
+    padding: 80px 0;
+    background-color: #F5F9FF;
+  }
+  
+  .reuniones-section iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+  }
+  
