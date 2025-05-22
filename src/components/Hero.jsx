@@ -24,7 +24,7 @@ const Hero = ({ variant = "gradient" }) => {
         <div className="hero-content">
           <h1 className="hero-title">
             Automatización inteligente para tu{" "}
-            <span className="text-primary">Consultorio y Clínica</span>
+            <span className="text-primary">Consultorio y Clínica</span> y <span className="text-primary">Consultorio  Clínica</span>
           </h1>
           <p className="hero-subtitle">
             Te ayudamos a automatizar la atención al paciente, agendar pacientes sin errores y dar seguimiento sin esfuerzo, usando WhatsApp, IA y tecnología conectada a tu operación diaria.
