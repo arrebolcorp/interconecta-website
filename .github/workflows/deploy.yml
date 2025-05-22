@@ -1,0 +1,21 @@
+name: Deploy Frontend Interconecta
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Conectar y ejecutar script por SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 24.199.93.252
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            bash /opt/interconecta/deploy-frontend.sh
+
