@@ -1,4 +1,4 @@
-name: 🚀 Deploy Frontend Interconecta
+name: 🚀 Desplegar Frontend en DO
 
 on:
   push:
@@ -7,11 +7,10 @@ on:
 
 jobs:
   deploy:
-    name: 🚀 Desplegar Frontend en DO
     runs-on: ubuntu-latest
 
     steps:
-      - name: Conectar y ejecutar script por SSH
+      - name: SSH Deploy Script
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_HOST }}
