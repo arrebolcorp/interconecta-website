@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/', // <<--- ESTA ES LA CLAVE
+  base: '/', // MUY IMPORTANTE para producción
   plugins: [react()],
 })
