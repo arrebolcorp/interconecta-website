@@ -17,12 +17,14 @@ import PlanesConsultorios from "./components/planes-consultorios";
 import PlanesClinicas from "./components/planes-clinicas";
 import CalculadoraROI from "./components/calculadora-roi";
 import Contacto from "./components/Contacto";
+import ScrollToTop from './components/ScrollToTop'; // Ajusta la ruta según tu estructura
 
 
 
 function App() {
   return (
     <Router>
+            <ScrollToTop /> {/* 👈 Este es el que resuelve tu problema */}
       <Navbar />
       <Routes>
         <Route path="/" element={

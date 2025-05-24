@@ -171,7 +171,7 @@ const [copiado, setCopiado] = useState(false);
     { nombre: "Google Calendar", logo: "/assets/images/calendar_logo.png", disponibleEn: ["esencial", "pro", "premium"] },
     { nombre: "WhatsApp Business", logo: "/assets/images/whatsappb_logo.png", disponibleEn: ["esencial", "pro", "premium"] },
     { nombre: "Google Drive", logo: "/assets/images/drive_logo.png", disponibleEn: ["pro", "premium"] },
-    { nombre: "Mercado Pago", logo: "/assets/images/mercadopago_logo.png", disponibleEn: [ "premium"] },
+    { nombre: "Mercado Pago", logo: "/assets/images/mercadopago_logo.png", disponibleEn: ["premium"] },
     { nombre: "Zoho", logo: "/assets/images/zoho_logo.png", disponibleEn: ["pro", "premium"] },
     { nombre: "Stripe", logo: "/assets/images/stripe_logo.png", disponibleEn: ["premium"] },
     { nombre: "Google Sheets", logo: "/assets/images/sheets_logo.png", disponibleEn: ["esencial", "pro", "premium"] },
