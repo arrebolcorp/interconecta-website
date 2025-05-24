@@ -41,7 +41,7 @@ const Navbar = () => {
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <span className="dropdown-label">Planes <span className="dropdown-icon">▾</span></span>
+              <span className="dropdown-label"><Link to="/planes-general">Planes</Link> <span className="dropdown-icon">▾</span></span>
               {dropdownOpen && (
                 <ul className="submenu show">
                   <li><Link to="/planes-clinicas" onClick={handleNavClick}>Planes Clínicas</Link></li>
@@ -53,6 +53,7 @@ const Navbar = () => {
             <li><Link to="/contacto" onClick={handleNavClick}>Contacto</Link></li>
             <li><Link to="/reuniones" onClick={handleNavClick}>Diagnóstico</Link></li>
             <li><Link to="/calculadora-roi" onClick={handleNavClick}>Calcula tu ROI</Link></li>
+            <li><Link to="/faq" onClick={handleNavClick}>FAQ</Link></li>
             <li>
               <Link to="/reuniones" className="btn-contratar" onClick={handleNavClick}>
                 Contratar

@@ -3,24 +3,24 @@ import './FaqSection.css';
 
 const faqs = [
   {
-    question: '¿Qué tipo de procesos puedo automatizar con Interconecta?',
-    answer: 'Puedes automatizar tareas como atención al cliente por WhatsApp, generación de reportes, seguimiento de prospectos, envío de recordatorios, integración con Google Sheets, CRMs como Zoho, y más. Nos adaptamos a tu flujo de trabajo actual.'
+    question: '¿Qué tan rápido puedo comenzar?',
+    answer: 'En promedio, tu asistente IA puede estar funcionando en menos de 7 días. No necesitas cambiar de sistema ni capacitar a tu equipo.'
   },
   {
-    question: '¿Qué pasa si mi clínica ya tiene un sistema?',
-    answer: 'Podemos integrarnos a tu sistema existente o migrar datos a una solución más automatizada.'
+    question: '¿Qué pasa si no me convence el servicio?',
+    answer: 'No hay contratos forzosos. Puedes cancelar en cualquier momento. Además, ofrecemos una demo gratuita para que pruebes antes de pagar.'
   },
   {
-    question: '¿Tienen planes para consultorios pequeños?',
-    answer: 'Sí, contamos con planes especiales desde $890 MXN para consultorios con menos de 60 pacientes al mes.'
+    question: '¿Cómo garantizan la seguridad de los datos de mis pacientes?',
+    answer: 'Usamos cifrado de nivel bancario, servidores dedicados y cumplimos con HIPAA, LGDP y NOM-004. Ningún dato médico es accesible por nuestro equipo.'
   },
   {
-    question: '¿Qué medidas de seguridad tienen con los datos que manejan de clínicas, consultorios y pacientes?',
-    answer: 'En Interconecta Capital se cubren los mecanismos de cifrado, autenticación, normas regulatorias (HIPAA, LGDP, NOM-004), estructura de certificados, respaldo seguro de datos, redes protegidas y control de accesos. También implementamos un modelo de \"Zero-Knowledge\", donde no tenemos acceso a datos sensibles, solo a metadatos anonimizados.'
+    question: '¿Qué resultados puedo esperar?',
+    answer: 'Nuestros clientes reportan hasta 95% de captación de consultas, 60% menos cancelaciones y ROI de hasta 400% en el primer mes.'
   },
   {
-    question: '¿Cómo agendo una reunión para conocer más?',
-    answer: 'Solo haz clic en el apartado “Diagnóstico”, valida que eres humano y elige la hora que más te convenga. En menos de 30 segundos tendrás tu cita confirmada.'
+    question: '¿Esto reemplaza a mi recepcionista?',
+    answer: 'No. La IA complementa al equipo humano, cubriendo tareas repetitivas como confirmaciones, agendamiento y respuestas comunes.'
   }
 ];
 
@@ -35,7 +35,7 @@ const FaqSection = () => {
     <section className="faqx-section">
       <div className="faqx-container">
         <h2 className="faqx-title">Preguntas Frecuentes (FAQ)</h2>
-        <p className="faqx-subtitle">Nuestros futuros clientes quieren saber.</p>
+        <p className="faqx-subtitle">Resolvemos lo que más preocupa a clínicas y consultorios.</p>
 
         <div className="faqx-list">
           {faqs.map((faq, index) => (
@@ -58,8 +58,8 @@ const FaqSection = () => {
         </div>
 
         <div className="faqx-footer">
-          <p>¿Aún tienes alguna pregunta?</p>
-          <a href="../#contact" className="faqx-button">Contáctanos</a>
+          <p>¿Tienes más dudas sobre seguridad, planes o resultados?</p>
+          <a href="/faq" className="faqx-button">Ver más preguntas frecuentes</a>
         </div>
       </div>
     </section>

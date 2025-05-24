@@ -1,70 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --primary: #1A69FA;
-  --secondary: #0F47B3;
-  --light-bg: #F5F9FF;
-  --title-color: #1C1C28;
-  --text-secondary: #6C6C84;
-  --border-subtle: #D8E4F9;
-  --interconecta-bg: #DEEEFF; /* Fondo suave de Interconecta */
-}
-
-/* Hero Section con fondo completo */
-section.hero-section {
-  padding: 0 !important;
-  margin: 0 !important;
+/* Hero.css - Versión completa reetiquetada como hero-ai- */
+.hero-ai-section {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background-color: var(--alt-bg);
   position: relative;
-  overflow: visible;
-  /* Aplicamos el fondo azul suave a toda la sección */
-  background: linear-gradient(135deg, var(--interconecta-bg) 0%, var(--light-bg) 100%);
-  /* Agregamos padding top para compensar el navbar */
-  padding-top: 80px !important;
-  padding-bottom: 40px !important;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 40px auto;
+  max-width: 1300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
-/* Alternativa: Si prefieres un fondo sólido */
-/* 
-section.hero-section {
-  background-color: var(--interconecta-bg);
-}
-*/
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 60px 40px;
+.hero-ai-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  flex-direction: row;
-  /* Mantenemos el fondo del contenedor pero con menos contraste */
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(26, 105, 250, 0.1);
-  border: 1px solid rgba(216, 228, 249, 0.8);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-ai-content {
+  max-width: 600px;
   position: relative;
-  z-index: 1;
-  
-  /* Centramos el contenedor con margen automático y agregamos padding horizontal */
-  margin-left: auto;
-  margin-right: auto;
-  /* Añadimos un wrapper interno para controlar el ancho */
-  width: calc(100% - 40px);
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
-.hero-content {
-  flex: 1;
-  text-align: left;
-}
-
-.hero-title {
-  font-size: 44px;
+.hero-ai-title {
+  font-size: 48px;
   line-height: 1.2;
+  margin-top: -50px;
   font-weight: 700;
   color: var(--title-color);
   margin-bottom: 20px;
@@ -74,193 +44,325 @@ section.hero-section {
   color: var(--primary);
 }
 
-.hero-subtitle {
-  font-size: 17px;
+.hero-ai-subtitle {
+  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 40px; /* Aumentamos de 30px a 40px */
+  margin-bottom: 30px;
   color: var(--text-secondary);
-  max-width: 600px;
 }
 
-.hero-cta {
-  margin-top: 20px;
+.hero-ai-cta {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.hero-cta a {
-  padding: 12px 24px;
+.btn-primary, .btn-outlinex {
+  display: inline-block;
+  padding: 14px 28px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  border: 2px solid transparent;
 }
 
 .btn-primary {
   background-color: var(--primary);
   color: white;
-  box-shadow: 0 4px 15px rgba(26, 105, 250, 0.3);
+  border-color: var(--primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(26, 105, 250, 0.4);
+  box-shadow: 0 4px 12px rgba(26, 105, 250, 0.3);
 }
 
 .btn-outlinex {
-  border: 1px solid var(--primary);
+  background-color: transparent;
   color: var(--primary);
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(5px);
+  border: 2px solid var(--primary);
 }
 
 .btn-outlinex:hover {
   background-color: rgba(26, 105, 250, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(26, 105, 250, 0.2);
+  box-shadow: 0 4px 12px rgba(26, 105, 250, 0.15);
 }
 
-.hero-image-wrapper {
-  flex: 1;
+.hero-ai-image-wrapper {
+  position: relative;
+  margin: 40px auto 0;
   display: flex;
-  justify-content: flex-end;
-}
-
-.hero-image {
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 480px;
-  height: auto;
+}
+
+.hero-ai-image {
+  position: relative;
+  max-width: 100%;
+  max-height: 400px;
   object-fit: contain;
-  /* Agregamos un efecto de sombra sutil a la imagen */
-  filter: drop-shadow(0 10px 25px rgba(26, 105, 250, 0.15));
 }
 
-/* Elementos decorativos opcionales */
-section.hero-section::before {
-  content: '';
+.hero-ai-trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px auto 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  text-align: center;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.trust-icon {
+  font-size: 18px;
+}
+
+.floating-element {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(26, 105, 250, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(15, 71, 179, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
+  animation: float 3s ease-in-out infinite alternate;
+  z-index: 1;
 }
 
-/* Responsive con mayor especificidad */
+.medical-stat-card {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(26, 105, 250, 0.15);
+  border: 1px solid var(--border-subtle);
+  text-align: center;
+  min-width: 80px;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.element-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.element-2 {
+  bottom: 30%;
+  right: 15%;
+  animation-delay: 0.5s;
+}
+
+.element-3 {
+  top: 60%;
+  left: 5%;
+  animation-delay: 1s;
+}
+
+.hero-ai-social-proof {
+  background: linear-gradient(135deg, rgba(26, 105, 250, 0.05), rgba(15, 71, 179, 0.02));
+  padding: 30px 0;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 20px;
+}
+
+.social-proof-intro {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.medical-testimonials-mini {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-ai-testimonial-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  text-align: center;
+}
+
+.specialty {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.result {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
 @media (max-width: 992px) {
-  section.hero-section {
-    padding-top: 60px !important;
-    padding-bottom: 30px !important;
-  }
-  
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 25px;
-    gap: 30px;
-    width: calc(100% - 30px);
-    margin-left: auto;
-    margin-right: auto;
+  .hero-ai-section {
+    padding: 100px 0 80px;
+    border-radius: 0;
   }
 
-  .hero-content {
-    order: 2;
+  .hero-ai-content {
     max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .hero-image-wrapper {
-    order: 1;
+  .hero-ai-cta {
     justify-content: center;
   }
 
-  .hero-image {
+  .hero-ai-image {
+    max-width: 80%;
+  }
+
+  .hero-ai-trust {
+    gap: 20px;
+  }
+
+  .medical-testimonials-mini {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-ai-title {
+    font-size: 36px;
+  }
+
+  .hero-ai-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-ai-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-ai-cta a {
+    width: 100%;
     max-width: 300px;
   }
 
-  .hero-title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 30px; /* En móvil mantenemos 30px para no crear demasiado espacio */
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-cta {
-    justify-content: center;
-  }
-}
-
-/* Para pantallas muy pequeñas */
-@media (max-width: 576px) {
-  section.hero-section {
-    padding-top: 40px !important;
-    padding-bottom: 20px !important;
-  }
-  
-  .hero-container {
-    padding: 30px 20px;
-    border-radius: 15px;
-    width: calc(100% - 20px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hero-image {
-    max-width: 240px;
-  }
-  
-  .hero-title {
-    font-size: 28px;
-    text-align: center;
-  }
-  
-  .hero-cta {
+  .hero-ai-trust {
     flex-direction: column;
-    width: 100%;
+    gap: 15px;
     text-align: center;
-    max-width: 250px;
-    margin: 0 auto;
+    padding: 15px;
+    margin: 20px auto 0;
+    align-items: center;
   }
-  
-  .hero-cta a {
-    width: 100%;
+
+  .trust-item {
+    justify-content: center;
     text-align: center;
+    width: 100%;
+  }
+
+  .medical-testimonials-mini {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-ai-testimonial-mini {
+    max-width: 100%;
+  }
+
+  .floating-element {
+    display: none;
   }
 }
 
-/* Estilos adicionales para mejor integración */
-/* Si quieres que el fondo se extienda hasta el navbar */
-.hero-section.full-height {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: 120px !important;
+@media (max-width: 480px) {
+  .hero-ai-title {
+    font-size: 32px;
+  }
+
+  .hero-ai-cta a {
+    padding: 16px 24px;
+    font-size: 15px;
+  }
+
+  .hero-ai-trust {
+    margin-top: 20px;
+    padding: 12px;
+  }
+
+  .trust-item {
+    font-size: 13px;
+  }
 }
 
-/* Variante con patrón de puntos sutil */
-.hero-section.dotted-bg::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle, rgba(26, 105, 250, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: 0;
+/*borrar en caso de que genere errores en versión mobile*/
+
+@media (max-width: 768px) {
+  .floating-element {
+    display: block !important;
+    transform: scale(0.8);
+    opacity: 0.85;
+  }
+
+  .element-1, .element-2, .element-3 {
+    position: absolute;
+    transform: scale(0.75) translateY(0);
+    animation: float 3s ease-in-out infinite alternate;
+  }
+
+  .element-1 { top: 10%; left: 5%; }
+  .element-2 { bottom: 20%; right: 5%; }
+  .element-3 { top: 50%; left: 3%; }
 }

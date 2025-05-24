@@ -16,9 +16,10 @@ import Servicios from "./components/Servicios";
 import PlanesConsultorios from "./components/planes-consultorios";
 import PlanesClinicas from "./components/planes-clinicas";
 import CalculadoraROI from "./components/calculadora-roi";
+import Faq from "./components/faq";
 import Contacto from "./components/Contacto";
 import ScrollToTop from './components/ScrollToTop'; // Ajusta la ruta según tu estructura
-
+import PlanesGeneral from './components/planes-general';
 
 
 function App() {
@@ -45,8 +46,10 @@ function App() {
         <Route path="/planes-consultorios" element={<PlanesConsultorios />} />
         <Route path="/planes-clinicas" element={<PlanesClinicas />} />
         <Route path="/calculadora-roi" element={<CalculadoraROI />} />
+        <Route path="/planes-general" element={<PlanesGeneral />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/reuniones" element={<Reuniones />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer />
       <FloatingWhatsApp />

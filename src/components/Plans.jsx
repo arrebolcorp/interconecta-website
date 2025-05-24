@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/Plans.css"; // Ajusta esta ruta según donde esté el archivo
+import "../assets/css/Plans.css";
+
 const Plans = () => {
   const [activeTab, setActiveTab] = useState('clinicas');
 
@@ -8,76 +9,66 @@ const Plans = () => {
     <section id="planes" className="plans-section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">Nuestros planes</h2>
-          <p className="section-subtitle">Soluciones adaptadas a las necesidades específicas de tu negocio</p>
+          <h2 className="section-title">Planes diseñados para médicos que quieren dejar de perder pacientes</h2>
+          <p className="section-subtitle">
+            Escoge el nivel de automatización que tu consultorio necesita. Todos incluyen nuestro Diagnóstico Médico Operativo gratuito.
+          </p>
         </div>
-        
+
         <div className="plans-tabs">
-          <button 
-            className={`plan-tab ${activeTab === 'consultorios' ? 'active' : ''}`}
-            onClick={() => setActiveTab('consultorios')}
-          >
+          <button className={`plan-tab ${activeTab === 'consultorios' ? 'active' : ''}`} onClick={() => setActiveTab('consultorios')}>
             Para Consultorios
           </button>
-          <button 
-            className={`plan-tab ${activeTab === 'clinicas' ? 'active' : ''}`} 
-            onClick={() => setActiveTab('clinicas')}
-          >
+          <button className={`plan-tab ${activeTab === 'clinicas' ? 'active' : ''}`} onClick={() => setActiveTab('clinicas')}>
             Para Clínicas
           </button>
+          <button className={`plan-tab ${activeTab === 'enterprise' ? 'active' : ''}`} onClick={() => setActiveTab('enterprise')}>
+            Enterprise
+          </button>
         </div>
-        
+
         <div className="plans-content">
           {/* Planes para Clínicas */}
           <div className={`plan-category ${activeTab === 'clinicas' ? 'active' : ''}`} id="clinicas">
             <div className="plans-grid">
               <div className="plan-card">
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Impulso</h3>
-                  <p className="plan-subtitle">Operación inteligente</p>
+                  <h3 className="plan-name">Impulso Plus</h3>
+                  <p className="plan-subtitle">Para clínicas que inician automatización</p>
                   <div className="plan-price">
-                  <div className="price-amount">
-  $2,388<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $4,200<span className="iva-note">+ I.V.A.</span> único
-</div>
-
+                    <div className="price-amount">$3,500<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Setup: $4,200<span className="iva-note">+ I.V.A.</span> único</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
-                    <li>Asistente virtual por WhatsApp</li>
+                    <li>Asistente virtual por WhatsApp 24/7</li>
                     <li>Confirmación automática de citas</li>
                     <li>Formulario inteligente para nuevos pacientes</li>
-                    <li>Registro en hoja de cálculo o CRM</li>
-                    <li>Agenda inteligente según tipo de servicio</li>
+                    <li>Registro en CRM o hoja médica digital</li>
+                    <li>Agenda inteligente por tipo de servicio</li>
                   </ul>
                 </div>
                 <div className="plan-footer">
                   <Link to="/planes-clinicas" className="btn btn-outline btn-full">Ver detalles</Link>
                 </div>
               </div>
-              
+
               <div className="plan-card featured">
                 <div className="plan-badge">Recomendado</div>
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Crecimiento</h3>
-                  <p className="plan-subtitle">Seguimiento y control</p>
+                  <h3 className="plan-name">Crecimiento Plus</h3>
+                  <p className="plan-subtitle">Seguimiento, control y retención</p>
                   <div className="plan-price">
-                    <div className="price-amount">
-  $4,788<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $7,800<span className="iva-note">+ I.V.A.</span> único
-</div>
+                    <div className="price-amount">$6,000<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Setup: $7,800<span className="iva-note">+ I.V.A.</span> único</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
-                    <li>Todo lo del plan Impulso</li>
+                    <li>Todo lo del plan Impulso Plus</li>
                     <li>Seguimiento automatizado post-cita</li>
-                    <li>Recordatorios y cancelaciones automáticas</li>
+                    <li>Recordatorios, cancelaciones y reprogramaciones</li>
                     <li>Encuesta NPS post atención</li>
                     <li>Integración con Google Calendar y CRM</li>
                     <li>Dashboard con indicadores clave</li>
@@ -87,29 +78,24 @@ const Plans = () => {
                   <Link to="/planes-clinicas" className="btn btn-primary btn-full">Ver detalles</Link>
                 </div>
               </div>
-              
+
               <div className="plan-card">
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Dominio</h3>
-                  <p className="plan-subtitle">Escalabilidad y marketing</p>
+                  <h3 className="plan-name">Dominio Plus</h3>
+                  <p className="plan-subtitle">Escalabilidad, campañas y reportes</p>
                   <div className="plan-price">
-                    <div className="price-amount">
-  $8,988<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $14,400<span className="iva-note">+ I.V.A.</span> único
-</div>
+                    <div className="price-amount">$12,000<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Setup: $14,400<span className="iva-note">+ I.V.A.</span> único</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
-                    <li>Todo lo del plan Crecimiento</li>
+                    <li>Todo lo del plan Crecimiento Plus</li>
                     <li>Automatización de pagos</li>
-                    <li>Generación automática de cotizaciones</li>
                     <li>Campañas segmentadas por WhatsApp</li>
-                    <li>Integración con Google Drive, Notion, CRM, Ads</li>
-                    <li>Panel maestro con reportes por área</li>
-                    <li>Soporte premium (respuesta en menos de 4h)</li>
+                    <li>Integraciones con Google Drive, Notion, CRM y Ads</li>
+                    <li>Panel maestro con reportes operativos</li>
+                    <li>Soporte VIP (respuesta en menos de 4h)</li>
                   </ul>
                 </div>
                 <div className="plan-footer">
@@ -118,58 +104,50 @@ const Plans = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Planes para Consultorios */}
           <div className={`plan-category ${activeTab === 'consultorios' ? 'active' : ''}`} id="consultorios">
             <div className="plans-grid">
               <div className="plan-card">
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Esencial</h3>
-                  <p className="plan-subtitle">Para comenzar</p>
+                  <h3 className="plan-name">Esencial Plus</h3>
+                  <p className="plan-subtitle">Ideal para consultorios individuales</p>
                   <div className="plan-price">
-                    <div className="price-amount">
-  $890<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $2,900<span className="iva-note">+ I.V.A.</span> único
-</div>
+                    <div className="price-amount">$1,500<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Sin costo de setup</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
                     <li>Asistente virtual básico</li>
-                    <li>Agendamiento y recordatorios</li>
-                    <li>Integración Google Calendar</li>
+                    <li>Agendamiento automático</li>
+                    <li>Recordatorios por WhatsApp</li>
+                    <li>Integración con Google Calendar</li>
                     <li>Confirmación automática de citas</li>
-                    <li>Soporte por correo electrónico</li>
                   </ul>
                 </div>
                 <div className="plan-footer">
                   <Link to="/planes-consultorios" className="btn btn-outline btn-full">Ver detalles</Link>
                 </div>
               </div>
-              
+
               <div className="plan-card featured">
                 <div className="plan-badge">Recomendado</div>
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Pro</h3>
-                  <p className="plan-subtitle">Control total</p>
+                  <h3 className="plan-name">Pro Plus</h3>
+                  <p className="plan-subtitle">Control completo del consultorio</p>
                   <div className="plan-price">
-                    <div className="price-amount">
-  $1,490<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $3,900<span className="iva-note">+ I.V.A.</span> único
-</div>
+                    <div className="price-amount">$2,500<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Setup: $3,900<span className="iva-note">+ I.V.A.</span> único</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
-                    <li>Todo lo del plan Esencial</li>
-                    <li>Asistente con IA</li>
-                    <li>Panel de control</li>
-                    <li>Seguimiento post-consulta</li>
-                    <li>Formularios inteligentes</li>
+                    <li>Todo lo del plan Esencial Plus</li>
+                    <li>Asistente con IA médica</li>
+                    <li>Panel de control del consultorio</li>
+                    <li>Seguimiento post-consulta automatizado</li>
+                    <li>Formularios médicos inteligentes</li>
                     <li>Soporte prioritario</li>
                   </ul>
                 </div>
@@ -177,27 +155,23 @@ const Plans = () => {
                   <Link to="/planes-consultorios" className="btn btn-primary btn-full">Ver detalles</Link>
                 </div>
               </div>
-              
+
               <div className="plan-card">
                 <div className="plan-header">
-                  <h3 className="plan-name">Plan Premium</h3>
-                  <p className="plan-subtitle">Máximo rendimiento</p>
+                  <h3 className="plan-name">Premium Plus</h3>
+                  <p className="plan-subtitle">Automatización y expansión</p>
                   <div className="plan-price">
-                    <div className="price-amount">
-  $2,490<span className="iva-note">+ I.V.A.</span> <span>/ mes</span>
-</div>
-<div className="price-setup">
-  Setup: $5,900<span className="iva-note">+ I.V.A.</span> único
-</div>
+                    <div className="price-amount">$4,000<span className="iva-note">+ I.V.A.</span> <span>/ mes</span></div>
+                    <div className="price-setup">Setup: $5,900<span className="iva-note">+ I.V.A.</span> único</div>
                   </div>
                 </div>
                 <div className="plan-features">
                   <ul>
-                    <li>Todo lo del plan Pro</li>
-                    <li>IA personalizada</li>
-                    <li>Campañas automáticas</li>
-                    <li>Integraciones avanzadas</li>
-                    <li>Análisis de datos</li>
+                    <li>Todo lo del plan Pro Plus</li>
+                    <li>IA personalizada por especialidad</li>
+                    <li>Campañas automáticas y marketing médico</li>
+                    <li>Integraciones avanzadas (CRM, Ads, Notion)</li>
+                    <li>Análisis de datos y reportes de rendimiento</li>
                     <li>Soporte VIP 24/7</li>
                   </ul>
                 </div>
@@ -207,10 +181,39 @@ const Plans = () => {
               </div>
             </div>
           </div>
+
+          {/* Plan Enterprise */}
+          <div className={`plan-category ${activeTab === 'enterprise' ? 'active' : ''}`} id="enterprise">
+            <div className="plans-grid">
+              <div className="plan-card">
+                <div className="plan-header">
+                  <h3 className="plan-name">Enterprise</h3>
+                  <p className="plan-subtitle">Automatización avanzada y desarrollos a medida</p>
+                  <div className="plan-price">
+                    <div className="price-amount">A medida</div>
+                    <div className="price-setup">Contáctanos para cotización</div>
+                  </div>
+                </div>
+                <div className="plan-features">
+                  <ul>
+                    <li>Todo lo del plan Dominio Plus</li>
+                    <li>Infraestructura dedicada por clínica</li>
+                    <li>Desarrollos personalizados e integraciones exclusivas</li>
+                    <li>Soporte estratégico y técnico especializado</li>
+                    <li>Capacidad ilimitada de escalamiento</li>
+                    <li>Acceso a funciones enterprise beta</li>
+                  </ul>
+                </div>
+                <div className="plan-footer">
+                  <a href="#contacto" className="btn btn-primary btn-full">Contactar a ventas</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
         <div className="text-center mt-50">
-          <a href="#contacto" className="btn btn-primary">Solicitar una demo personalizada</a>
+          <a href="#contacto" className="btn btn-primary">Quiero automatizar mi consultorio</a>
         </div>
       </div>
     </section>

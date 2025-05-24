@@ -1,14 +1,14 @@
 import React from "react";
-import "../assets/css/Process.css"; // Asegúrate de que este archivo tenga las nuevas clases implement-*
+import "../assets/css/Process.css";
 
 const Process = () => {
   return (
     <section className="implement-section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">Cómo implementamos la automatización</h2>
+          <h2 className="section-title">¿Cómo transformamos tu consultorio en 7 días?</h2>
           <p className="section-subtitle">
-            Un proceso ágil y sencillo diseñado para no interrumpir tu operación
+            Un proceso clínico-operativo simple, pensado para médicos ocupados
           </p>
         </div>
 
@@ -16,9 +16,9 @@ const Process = () => {
           <div className="implement-step">
             <div className="implement-number">1</div>
             <div className="implement-content">
-              <h3 className="implement-title">Diagnóstico</h3>
+              <h3 className="implement-title">Diagnóstico clínico-operativo</h3>
               <p className="implement-description">
-                Analizamos tu operación actual e identificamos oportunidades de automatización con alto impacto.
+                Analizamos tu flujo de pacientes, WhatsApps pendientes y tiempos muertos. En solo 15 min detectamos los cuellos de botella.
               </p>
             </div>
           </div>
@@ -26,9 +26,9 @@ const Process = () => {
           <div className="implement-step">
             <div className="implement-number">2</div>
             <div className="implement-content">
-              <h3 className="implement-title">Propuesta</h3>
+              <h3 className="implement-title">Propuesta personalizada</h3>
               <p className="implement-description">
-                Diseñamos una solución personalizada basada en tus necesidades específicas y objetivos de negocio.
+                Te mostramos una solución a tu medida, según especialidad, tipo de paciente y herramientas actuales. Sin tecnicismos.
               </p>
             </div>
           </div>
@@ -36,9 +36,9 @@ const Process = () => {
           <div className="implement-step">
             <div className="implement-number">3</div>
             <div className="implement-content">
-              <h3 className="implement-title">Implementación</h3>
+              <h3 className="implement-title">Implementación en 7 días</h3>
               <p className="implement-description">
-                En solo 7 días, configuramos y ponemos en marcha tu sistema de automatización, con mínima intervención requerida.
+                Nuestro equipo configura todo sin que detengas tus consultas. No necesitas cambiar de sistema ni aprender software nuevo.
               </p>
             </div>
           </div>
@@ -46,9 +46,9 @@ const Process = () => {
           <div className="implement-step">
             <div className="implement-number">4</div>
             <div className="implement-content">
-              <h3 className="implement-title">Optimización</h3>
+              <h3 className="implement-title">Optimización con IA</h3>
               <p className="implement-description">
-                Monitoreamos y mejoramos continuamente tu sistema para maximizar resultados a lo largo del tiempo.
+                Analizamos el rendimiento de tu consultorio y aplicamos mejoras cada semana para maximizar tu retorno.
               </p>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Process = () => {
 
         <div className="text-center implement-mt-50">
           <a href="/Reuniones" className="btn btn-primary">
-            Solicitar diagnóstico gratuito
+            Solicita tu diagnóstico gratuito en 15 minutos
           </a>
         </div>
       </div>
