@@ -1,18 +1,18 @@
 /* Contact Section - Clases únicas para evitar conflictos */
-.interconecta-contact-section {
+.interconecta-contacto-section {
   padding: 80px 0 !important;
   background-color: #f7f9fc !important;
   font-family: 'Sora', sans-serif !important;
 }
 
-.interconecta-container {
+.interconecta-container-contacto {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 20px !important;
 }
 
 /* Recuadro principal dividido en dos */
-.interconecta-contact-wrapper {
+.interconecta-contact-wrapper-contacto {
   display: flex !important;
   background: white !important;
   border-radius: 16px !important;

@@ -18,7 +18,7 @@ const Process = () => {
             <div className="implement-content">
               <h3 className="implement-title">Diagnóstico clínico-operativo</h3>
               <p className="implement-description">
-                Analizamos tu flujo de pacientes, WhatsApps pendientes y tiempos muertos. En solo 15 min detectamos los cuellos de botella.
+                Analizamos tu flujo de pacientes, WhatsApps pendientes y tiempos muertos. En solo 30 min detectamos los cuellos de botella.
               </p>
             </div>
           </div>

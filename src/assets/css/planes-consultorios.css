@@ -1,4 +1,4 @@
-/* Estilos Modernos para Planes de Consultorios - AI Partner Médico */
+/* Estilos Modernos para Planes de Consultorios - AI Partner MÃ©dico */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* Hero Section Médico Moderno */
+/* Hero Section MÃ©dico Moderno */
 .hero-section.medical {
   text-align: center;
   padding: 4rem 2rem;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
 }
 
-/* Social Proof Médico */
+/* Social Proof MÃ©dico */
 .medical-social-proof {
   display: flex;
   justify-content: center;
@@ -471,7 +471,7 @@ h1, h2, h3, h4, h5 {
 .pro-col { color: var(--pro-color); }
 .premium-col { color: var(--premium-color); }
 
-/* ROI Section Médica */
+/* ROI Section MÃ©dica */
 .roi-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5 {
   text-decoration: underline;
 }
 
-/* Integrations Section Médica */
+/* Integrations Section MÃ©dica */
 .integration-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -631,7 +631,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
-/* Process Section Médica */
+/* Process Section MÃ©dica */
 .process-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -796,7 +796,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
-/* Referral Section Médica */
+/* Referral Section MÃ©dica */
 .referral-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -880,7 +880,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: var(--shadow-md);
 }
 
-/* Modal Médico Mejorado */
+/* Modal MÃ©dico Mejorado */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1075,7 +1075,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.6;
 }
 
-/* CTA Final Médico */
+/* CTA Final MÃ©dico */
 .cta-section.medical-final {
   margin: 4rem 0;
   padding: 4rem 2rem;
@@ -1373,7 +1373,7 @@ h1, h2, h3, h4, h5 {
 
 /* Agregar estos estilos al FINAL de tu archivo planes-consultorios.css */
 
-/* Specialties Section Médica para Consultorios */
+/* Specialties Section MÃ©dica para Consultorios */
 .specialties-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -1431,7 +1431,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.4;
 }
 
-/* Success Cases Section Médica para Consultorios */
+/* Success Cases Section MÃ©dica para Consultorios */
 .success-cases-section.medical {
   margin: 4rem 0;
   padding: 3rem 2rem;
@@ -1552,7 +1552,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/* Animaciones específicas para las nuevas secciones */
+/* Animaciones especÃ­ficas para las nuevas secciones */
 .specialty-card {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
@@ -1570,8 +1570,80 @@ h1, h2, h3, h4, h5 {
 .success-case:nth-child(2) { animation-delay: 0.3s; }
 .success-case:nth-child(3) { animation-delay: 0.5s; }
 
-/* Efectos hover específicos */
+/* Efectos hover especÃ­ficos */
 .specialty-card:hover .specialty-icon {
   transform: scale(1.3);
   transition: var(--transition-smooth);
+}
+
+
+/* FIX ADICIONAL MOVIL FULL WIDTH PARA PLANES CONSULTORIOS */
+@media (max-width: 480px) {
+  .hero-section.medical {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 0 2rem;
+  }
+
+  .hero-title-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-icon-pulse {
+    font-size: 2rem;
+  }
+
+  .proof-number-consultorios {
+    font-size: 1.5rem;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .nav-tab {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .plan-details-view,
+  .comparison-view,
+  .cta-section.medical-final {
+    padding: 2rem 1rem;
+  }
+
+  .plan-card.modern {
+    margin: 1rem 0;
+  }
+
+  .roi-grid,
+  .process-timeline,
+  .security-grid,
+  .implementation-guarantees {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .cta-buttons-final {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button.primary-final,
+  .button.secondary-final {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-arrow {
+    font-size: 1.25rem;
+  }
 }

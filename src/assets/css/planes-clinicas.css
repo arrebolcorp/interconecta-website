@@ -1,4 +1,4 @@
-/* Estilos Modernos para Planes de Clínicas - Chief AI Officer Enterprise */
+/* Estilos Modernos para Planes de ClÃ­nicas - Chief AI Officer Enterprise */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -28,7 +28,7 @@
   --gradient-enterprise: linear-gradient(135deg, #1A69FA 0%, #3364c0 50%, #475d84 100%);
 }
 
-/* Base Styles para Clínicas */
+/* Base Styles para ClÃ­nicas */
 .planes-clinicas-container.modern {
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* Hero Section Clínicas Enterprise */
+/* Hero Section ClÃ­nicas Enterprise */
 .hero-section.clinicas {
   text-align: center;
   padding: 4rem 2rem;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
 }
 
-/* Social Proof Clínicas */
+/* Social Proof ClÃ­nicas */
 .clinicas-social-proof {
   display: flex;
   justify-content: center;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-/* Navigation Clínicas */
+/* Navigation ClÃ­nicas */
 .plans-navigation {
   display: flex;
   justify-content: space-between;
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5 {
   opacity: 0.9;
 }
 
-/* Plan Cards Clínicas */
+/* Plan Cards ClÃ­nicas */
 .plan-card.clinicas {
   background: white;
   border-radius: var(--border-radius-lg);
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-/* Comparison Table Clínicas */
+/* Comparison Table ClÃ­nicas */
 .comparison-table.clinicas {
   width: 100%;
   border-collapse: collapse;
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5 {
 .crecimiento-col { color: var(--crecimiento-color); text-align: center; }
 .dominio-col { color: var(--dominio-color); text-align: center; }
 
-/* ROI Section Clínicas */
+/* ROI Section ClÃ­nicas */
 .roi-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.4;
 }
 
-/* Integration Section Clínicas */
+/* Integration Section ClÃ­nicas */
 .integration-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -692,7 +692,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
-/* Process Section Clínicas */
+/* Process Section ClÃ­nicas */
 .process-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -903,7 +903,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-/* Security Section Clínicas */
+/* Security Section ClÃ­nicas */
 .security-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -965,7 +965,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
-/* Referral Section Clínicas */
+/* Referral Section ClÃ­nicas */
 .referral-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -1056,7 +1056,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: var(--shadow-md);
 }
 
-/* Modal Clínicas */
+/* Modal ClÃ­nicas */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1180,7 +1180,7 @@ h1, h2, h3, h4, h5 {
   color: var(--title-color);
 }
 
-/* FAQ Section Clínicas */
+/* FAQ Section ClÃ­nicas */
 .faq-section.clinicas {
   margin: 4rem 0;
   padding: 3.5rem 2rem;
@@ -1252,7 +1252,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.95rem;
 }
 
-/* CTA Final Clínicas */
+/* CTA Final ClÃ­nicas */
 .cta-section.clinicas-final {
   margin: 4rem 0;
   padding: 4rem 2rem;
@@ -1323,7 +1323,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Sora', sans-serif;
 }
 
-.stat-label-blanco {
+.stat-label {
   font-size: 0.9rem;
   opacity: 0.8;
   color: white;
@@ -1391,7 +1391,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-/* Responsive Design Clínicas */
+/* Responsive Design ClÃ­nicas */
 @media (max-width: 1024px) {
   .plans-navigation {
     flex-direction: column;
@@ -1556,7 +1556,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/* Animaciones específicas para clínicas */
+/* Animaciones especÃ­ficas para clÃ­nicas */
 @keyframes fadeInUpClinicas {
   from {
     opacity: 0;
@@ -1590,7 +1590,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/* Estados de carga específicos para clínicas */
+/* Estados de carga especÃ­ficos para clÃ­nicas */
 .plan-card.clinicas,
 .roi-card.clinicas,
 .specialty-card,
@@ -1617,7 +1617,7 @@ h1, h2, h3, h4, h5 {
 .success-case:nth-child(2) { animation-delay: 0.3s; }
 .success-case:nth-child(3) { animation-delay: 0.5s; }
 
-/* Efectos hover específicos para clínicas */
+/* Efectos hover especÃ­ficos para clÃ­nicas */
 .plan-card.clinicas:hover .plan-icon {
   animation: pulseIconClinicas 1.5s ease-in-out;
 }
@@ -1632,7 +1632,7 @@ h1, h2, h3, h4, h5 {
   transition: var(--transition-smooth);
 }
 
-/* Efectos de entrada para elementos específicos */
+/* Efectos de entrada para elementos especÃ­ficos */
 .nav-tab {
   opacity: 0;
   animation: scaleInClinicas 0.6s ease-out forwards;
@@ -1702,7 +1702,7 @@ h1, h2, h3, h4, h5 {
   margin: 4rem 0;
 }
 
-/* Print styles para clínicas */
+/* Print styles para clÃ­nicas */
 @media print {
   .hero-section.clinicas,
   .modal-overlay,
@@ -1737,5 +1737,65 @@ h1, h2, h3, h4, h5 {
   .specialty-card,
   .security-card {
     border: 2px solid #000;
+  }
+}
+
+
+/* RESPONSIVE FIXES */
+@media (max-width: 480px) {
+  .planes-clinicas-container {
+    padding-top: 80px;
+  }
+
+  .hero-section.clinicas {
+    padding: clamp(2rem, 5vw, 3rem) 1rem;
+    margin: 1rem 0 2rem;
+    text-align: center;
+  }
+
+  .hero-title-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-title-wrapper h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .hero-icon-pulse {
+    font-size: 2rem;
+  }
+
+  .clinicas-social-proof {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .proof-number-clinicas {
+    font-size: 1.5rem;
+  }
+
+  .social-proof-item {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .plan-card.clinicas {
+    margin-bottom: 2rem;
+  }
+
+  .cta-buttons-final {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  .button.primary-final,
+  .button.secondary-final {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1.25rem;
   }
 }

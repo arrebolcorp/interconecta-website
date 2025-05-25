@@ -85,9 +85,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="interconecta-contact-section">
-      <div className="interconecta-container">
-        <div className="interconecta-contact-wrapper">
+    <section className="interconecta-contacto-section">
+      <div className="interconecta-container-contacto">
+        <div className="interconecta-contact-wrapper-contacto">
          
           {/* Parte izquierda: mensaje y beneficios */}
           <div className="interconecta-contact-content">
