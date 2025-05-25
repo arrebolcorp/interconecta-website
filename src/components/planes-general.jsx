@@ -22,13 +22,20 @@ const PlanesGeneral = () => {
     return () => clearInterval(interval);
   }, [rotatingStats.length]);
 
-  // Animaciones
-  const fadeInUp = {
+  // Animaciones optimizadas para el sistema de variables único
+  const pgFadeInUp = {
     hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.8, 
+        ease: "easeOut" 
+      } 
+    }
   };
 
-  const staggerContainer = {
+  const pgStaggerContainer = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -39,19 +46,26 @@ const PlanesGeneral = () => {
     }
   };
 
-  const slideIn = {
+  const pgSlideIn = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: "easeOut" 
+      } 
+    }
   };
 
   return (
     <div className="planes-general-container">
-      {/* Hero Section con FOMO */}
+      {/* Hero Section con FOMO optimizado */}
       <motion.section 
         className="hero-section-general"
         initial="hidden"
         animate="visible"
-        variants={fadeInUp}
+        variants={pgFadeInUp}
       >
         <div className="hero-content">
           <div className="fomo-badge">
@@ -61,7 +75,7 @@ const PlanesGeneral = () => {
           
           <motion.h1 
             className="hero-title"
-            variants={fadeInUp}
+            variants={pgFadeInUp}
           >
             El <span className="gradient-text">Chief AI Officer</span>
             <br />
@@ -70,7 +84,7 @@ const PlanesGeneral = () => {
           
           <motion.p 
             className="hero-subtitle"
-            variants={fadeInUp}
+            variants={pgFadeInUp}
           >
             Mientras otros médicos pierden pacientes por respuestas lentas,
             <br />
@@ -79,10 +93,10 @@ const PlanesGeneral = () => {
             La pregunta no es si necesitas automatización, sino cuánto estás perdiendo sin ella.
           </motion.p>
 
-          {/* Estadística rotativa */}
+          {/* Estadística rotativa optimizada */}
           <motion.div 
             className="rotating-stat"
-            variants={fadeInUp}
+            variants={pgFadeInUp}
           >
             <AnimatePresence mode="wait">
               <motion.div
@@ -102,12 +116,12 @@ const PlanesGeneral = () => {
 
           <motion.div 
             className="cta-buttons-hero"
-            variants={staggerContainer}
+            variants={pgStaggerContainer}
           >
             <motion.a 
               href="#planes"
               className="button primary-hero"
-              variants={slideIn}
+              variants={pgSlideIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -117,7 +131,7 @@ const PlanesGeneral = () => {
             <motion.a 
               href="#historia"
               className="button secondary-hero"
-              variants={slideIn}
+              variants={pgSlideIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -127,17 +141,17 @@ const PlanesGeneral = () => {
           </motion.div>
         </div>
 
-        {/* Background Pattern */}
+        {/* Background Pattern optimizado */}
         <div className="hero-pattern"></div>
       </motion.section>
 
-      {/* Urgencia Section */}
+      {/* Urgencia Section optimizada */}
       <motion.section 
         className="urgency-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeInUp}
+        variants={pgFadeInUp}
       >
         <div className="urgency-content">
           <h2>⚠️ La Ventana de Oportunidad se Cierra</h2>
@@ -183,31 +197,31 @@ const PlanesGeneral = () => {
         </div>
       </motion.section>
 
-      {/* Historia de Interconecta */}
+      {/* Historia de Interconecta optimizada */}
       <motion.section 
         id="historia"
         className="history-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={staggerContainer}
+        variants={pgStaggerContainer}
       >
         <div className="history-content">
-          <motion.h2 variants={fadeInUp}>De la Frustración Médica a la Revolución IA</motion.h2>
+          <motion.h2 variants={pgFadeInUp}>De la Frustración Médica a la Revolución IA</motion.h2>
           
           <div className="timeline">
-            <motion.div className="timeline-item" variants={slideIn}>
+            <motion.div className="timeline-item" variants={pgSlideIn}>
               <div className="timeline-icon">😤</div>
               <div className="timeline-content">
                 <h3>El Problema que Vivimos</h3>
                 <p>
-                  Como friki de la mejora continua en el sector de la salud, veíamos colegas perder pacientes por <strong>responder WhatsApps a las 2 AM</strong>, 
+                  Como especialistas en automatización médica, veíamos colegas perder pacientes por <strong>responder WhatsApps a las 2 AM</strong>, 
                   coordinando manualmente entre especialistas, y sacrificando vida personal por tareas administrativas.
                 </p>
               </div>
             </motion.div>
 
-            <motion.div className="timeline-item" variants={slideIn}>
+            <motion.div className="timeline-item" variants={pgSlideIn}>
               <div className="timeline-icon">💡</div>
               <div className="timeline-content">
                 <h3>La Revelación</h3>
@@ -218,7 +232,7 @@ const PlanesGeneral = () => {
               </div>
             </motion.div>
 
-            <motion.div className="timeline-item" variants={slideIn}>
+            <motion.div className="timeline-item" variants={pgSlideIn}>
               <div className="timeline-icon">🚀</div>
               <div className="timeline-content">
                 <h3>La Misión</h3>
@@ -230,7 +244,7 @@ const PlanesGeneral = () => {
             </motion.div>
           </div>
 
-          <motion.div className="mission-statement" variants={fadeInUp}>
+          <motion.div className="mission-statement" variants={pgFadeInUp}>
             <blockquote>
               "Nuestra misión no es solo automatizar consultorios.
               <br />
@@ -243,19 +257,19 @@ const PlanesGeneral = () => {
         </div>
       </motion.section>
 
-      {/* Por qué Nacieron los Planes */}
+      {/* Por qué Nacieron los Planes optimizada */}
       <motion.section 
         className="plans-origin-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={staggerContainer}
+        variants={pgStaggerContainer}
       >
         <div className="origin-content">
-          <motion.h2 variants={fadeInUp}>¿Por Qué Existen Nuestros Planes?</motion.h2>
+          <motion.h2 variants={pgFadeInUp}>¿Por Qué Existen Nuestros Planes?</motion.h2>
           
           <div className="origin-grid">
-            <motion.div className="origin-card problem" variants={slideIn}>
+            <motion.div className="origin-card problem" variants={pgSlideIn}>
               <h3>❌ Lo que NO Funcionaba</h3>
               <ul>
                 <li>Software genérico que no entiende medicina</li>
@@ -266,7 +280,7 @@ const PlanesGeneral = () => {
               </ul>
             </motion.div>
 
-            <motion.div className="origin-card solution" variants={slideIn}>
+            <motion.div className="origin-card solution" variants={pgSlideIn}>
               <h3>✅ Nuestra Solución</h3>
               <ul>
                 <li><strong>IA entrenada específicamente</strong> en protocolos médicos</li>
@@ -278,7 +292,7 @@ const PlanesGeneral = () => {
             </motion.div>
           </div>
 
-          <motion.div className="evolution-story" variants={fadeInUp}>
+          <motion.div className="evolution-story" variants={pgFadeInUp}>
             <h3>La Evolución de Nuestros Planes</h3>
             <div className="evolution-timeline">
               <div className="evolution-step">
@@ -313,25 +327,25 @@ const PlanesGeneral = () => {
         </div>
       </motion.section>
 
-      {/* Planes Section */}
+      {/* Planes Selection optimizada */}
       <motion.section 
         id="planes"
         className="plans-selection-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={staggerContainer}
+        variants={pgStaggerContainer}
       >
         <div className="plans-content">
-          <motion.h2 variants={fadeInUp}>Elige Tu Camino hacia la Libertad Médica</motion.h2>
-          <motion.p className="plans-subtitle" variants={fadeInUp}>
+          <motion.h2 variants={pgFadeInUp}>Elige Tu Camino hacia la Libertad Médica</motion.h2>
+          <motion.p className="plans-subtitle" variants={pgFadeInUp}>
             Cada plan fue diseñado por médicos, para médicos, basado en años de experiencia automatizando consultorios reales.
           </motion.p>
 
           <div className="plans-cards">
             <motion.div 
               className="plan-selector-card consultorios"
-              variants={slideIn}
+              variants={pgSlideIn}
               whileHover={{ scale: 1.05, y: -10 }}
             >
               <div className="card-header">
@@ -384,7 +398,7 @@ const PlanesGeneral = () => {
 
             <motion.div 
               className="plan-selector-card clinicas"
-              variants={slideIn}
+              variants={pgSlideIn}
               whileHover={{ scale: 1.05, y: -10 }}
             >
               <div className="card-header">
@@ -438,37 +452,37 @@ const PlanesGeneral = () => {
         </div>
       </motion.section>
 
-      {/* Social Proof Masivo */}
+      {/* Social Proof Masivo optimizada */}
       <motion.section 
         className="social-proof-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={staggerContainer}
+        variants={pgStaggerContainer}
       >
         <div className="proof-content">
-          <motion.h2 variants={fadeInUp}>+75 Médicos Ya Transformaron Sus Prácticas</motion.h2>
+          <motion.h2 variants={pgFadeInUp}>+75 Médicos Ya Transformaron Sus Prácticas</motion.h2>
           
           <div className="proof-grid">
-            <motion.div className="proof-stat" variants={slideIn}>
+            <motion.div className="proof-stat" variants={pgSlideIn}>
               <span className="proof-number">+75</span>
               <span className="proof-label">Médicos automatizados</span>
             </motion.div>
-            <motion.div className="proof-stat" variants={slideIn}>
+            <motion.div className="proof-stat" variants={pgSlideIn}>
               <span className="proof-number">$45M</span>
               <span className="proof-label">Ingresos adicionales generados</span>
             </motion.div>
-            <motion.div className="proof-stat" variants={slideIn}>
+            <motion.div className="proof-stat" variants={pgSlideIn}>
               <span className="proof-number">3,000h</span>
               <span className="proof-label">Tiempo devuelto a médicos</span>
             </motion.div>
-            <motion.div className="proof-stat" variants={slideIn}>
+            <motion.div className="proof-stat" variants={pgSlideIn}>
               <span className="proof-number">98%</span>
               <span className="proof-label">Satisfacción de clientes</span>
             </motion.div>
           </div>
 
-          <motion.div className="testimonials-preview" variants={fadeInUp}>
+          <motion.div className="testimonials-preview" variants={pgFadeInUp}>
             <div className="testimonial-card">
               <p>
                 "En 30 días recuperé 40 horas mensuales y mi consultorio opera perfectamente sin mí. 
@@ -487,13 +501,13 @@ const PlanesGeneral = () => {
         </div>
       </motion.section>
 
-      {/* CTA Final con FOMO */}
+      {/* CTA Final con FOMO optimizada */}
       <motion.section 
         className="final-cta-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeInUp}
+        variants={pgFadeInUp}
       >
         <div className="final-cta-content">
           <h2>🔥 La Decisión que Definirá tu Próxima Década</h2>
@@ -530,7 +544,7 @@ const PlanesGeneral = () => {
               <span className="button-icon">🩺</span>
               Quiero Mi Diagnóstico Gratuito AHORA
             </a>
-            <a href="#planes" className="button secondary-hero">
+            <a href="#planes" className="button secondary-final">
               <span className="button-icon">📋</span>
               Comparar Planes de Automatización
             </a>
