@@ -967,7 +967,7 @@ const ClinicasPlanes = () => {
               className="button secondary-final"
             >
               <span className="button-icon">📋</span> 
-              Agendar Auditoría Médica
+              Agendar Auditoría Operariva
             </a>
           </div>
 

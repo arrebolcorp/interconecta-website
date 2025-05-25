@@ -9,9 +9,9 @@ const Plans = () => {
     <section id="planes" className="plans-section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">Planes diseñados para médicos que quieren dejar de perder pacientes</h2>
+          <h2 className="section-title">Planes diseñados para profesionales de la salud que quieren dejar de perder pacientes</h2>
           <p className="section-subtitle">
-            Escoge el nivel de automatización que tu consultorio necesita. Todos incluyen nuestro Diagnóstico Médico Operativo gratuito.
+            Escoge el nivel de automatización que tu consultorio o clínica necesita. Todos incluyen nuestro Diagnóstico Operativo gratuito.
           </p>
         </div>
 

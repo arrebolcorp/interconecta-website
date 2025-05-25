@@ -100,7 +100,7 @@ const DiagnosticoMedicoForm = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3 }}
                   >
-                    <span className="medical-gradient-text">Diagnóstico Médico</span>
+                    <span className="medical-gradient-text">Diagnóstico de Oportunidades</span>
                     <br />
                     Exclusivo para Profesionales
                   </motion.h1>
@@ -113,7 +113,7 @@ const DiagnosticoMedicoForm = () => {
                   >
                     Accede al análisis personalizado que está transformando
                     <br />
-                    <strong>+75 consultorios médicos en México</strong>
+                    <strong>+75 consultorios del sector salud en México</strong>
                   </motion.p>
 
                   <motion.div 
@@ -148,7 +148,7 @@ const DiagnosticoMedicoForm = () => {
                     <div className="medical-security-header">
                       <div className="medical-security-icon">🛡️</div>
                       <h3>Verificación de Seguridad</h3>
-                      <p>Confirmamos que eres un profesional médico real</p>
+                      <p>Confirmamos que eres un profesional de la salud real</p>
                     </div>
                     
                     <div className="medical-captcha-container">
@@ -241,7 +241,7 @@ const DiagnosticoMedicoForm = () => {
                       exit={{ scale: 1.5, opacity: 0 }}
                     >
                       <div className="medical-step-icon">🌟</div>
-                      <h2>Bienvenido al Futuro de la Medicina</h2>
+                      <h2>Bienvenido al Futuro del sector Salud</h2>
                       <motion.p
                         key={rotatingPhraseIndex}
                         initial={{ y: 20, opacity: 0 }}
@@ -309,7 +309,7 @@ const DiagnosticoMedicoForm = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5 }}
                   >
-                    Agenda tu sesión de 30 minutos con nuestro especialista en automatización médica.
+                    Agenda tu sesión de 30 minutos con nuestro especialista en automatización del área de la salud.
                     <br />
                     <strong>Esta conversación puede transformar tu práctica para siempre.</strong>
                   </motion.p>
@@ -352,7 +352,7 @@ const DiagnosticoMedicoForm = () => {
                   >
                     <div className="calendar-guarantee-item">
                       <span>⏰</span>
-                      <span>15 minutos exactos</span>
+                      <span>30 minutos exactos</span>
                     </div>
                     <div className="calendar-guarantee-item">
                       <span>🔒</span>
@@ -379,7 +379,7 @@ const DiagnosticoMedicoForm = () => {
                     <p>
                       <strong>Solo 47 espacios disponibles</strong> en nuestra agenda de diagnósticos personalizados.
                       <br />
-                      <em>Más de 25 médicos han agendado esta semana.</em>
+                      <em>Más de 25 profesionales de la salud han agendado esta semana.</em>
                     </p>
                   </motion.div>
                 </div>

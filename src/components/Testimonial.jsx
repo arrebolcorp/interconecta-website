@@ -28,31 +28,31 @@ const Testimonials = () => {
       content: "Automatizar con Interconecta fue la mejor decisión operativa del año. Nuestro personal ahora se enfoca en el paciente, no en el teléfono.",
       author: "Dr. Emilio Cárdenas",
       title: "Clínica Renova - Puebla",
-      image: "/assets/images/testimonial-4.jpg"
+      image: "/assets/images/testimonial-icon-hombre.jpg"
     },
     {
       content: "No pensé que la IA podría ser tan empática. Los pacientes nos felicitan por la atención automatizada.",
       author: "Dra. Alejandra Ruiz",
       title: "Consultorio Belle Derma - CDMX",
-      image: "/assets/images/testimonial-5.jpg"
+      image: "/assets/images/testimonial-icon-mujer.jpg"
     },
     {
       content: "Nuestro seguimiento post-tratamiento mejoró radicalmente. Ahora sabemos si el paciente se sintió bien o si necesita algo más.",
       author: "Dra. Mónica Ríos",
       title: "Estética Avanzada Ríos - Mérida",
-      image: "/assets/images/testimonial-6.jpg"
+      image: "/assets/images/testimonial-icon-mujer.jpg"
     },
     {
       content: "La diferencia con Interconecta es que realmente entienden la medicina privada. No solo son técnicos, son aliados médicos.",
       author: "Dr. Guillermo Lara",
       title: "Clínica Premium Care - CDMX",
-      image: "/assets/images/testimonial-7.jpg"
+      image: "/assets/images/testimonial-icon-hombre.jpg"
     },
     {
       content: "Implementación en 7 días, resultados desde el día 10. Y sin cambiar mi sistema actual. Increíble.",
       author: "Dra. Lucía Fernández",
       title: "Consultorio Estético Lúmina - León",
-      image: "/assets/images/testimonial-8.jpg"
+      image: "/assets/images/testimonial-icon-mujer.jpg"
     }
   ];
 

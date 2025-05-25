@@ -28,18 +28,18 @@ const Hero = ({ variant = "gradient" }) => {
             Automatización médica inteligente que funciona 24/7. Nunca más pierdas un paciente por no responder a tiempo.
           </p>
           <div className="hero-ai-cta">
-            <a href="#planes" className="btn-primary">Diagnóstico gratuito 15 min</a>
-            <a href="https://wa.me/5215519686023?text=Hola, soy médico y quiero automatizar mi consultorio. ¿Pueden ayudarme?" className="btn-outlinex">👩‍⚕️ Chat médico especializado</a>
+            <a href="#planes" className="btn-primary">Diagnóstico gratuito 30 min</a>
+            <a href="https://wa.me/5215519686023?text=Hola, soy médico y quiero automatizar mi consultorio. ¿Pueden ayudarme?" className="btn-outlinex">👩‍⚕️ Chatea con un agente</a>
           </div>
 
           <div className="hero-ai-trust">
             <div className="trust-item">
               <span className="trust-icon">🏥</span>
-              <span className="trust-text">Especialistas en medicina estética</span>
+              <span className="trust-text">Especialistas en el área de la salud</span>
             </div>
             <div className="trust-item">
               <span className="trust-icon">⚡</span>
-              <span className="trust-text">Implementación en 7 días</span>
+              <span className="trust-text">Implementación en aprox. 7 días</span>
             </div>
             <div className="trust-item">
               <span className="trust-icon">📈</span>

@@ -7,7 +7,7 @@ const Servicios = () => {
     <div className="servicios-page">
       <section className="servicios-hero">
         <div className="servicios-container">
-          <h1>Tu <span className="servicios-text-primary-color">AI Partner Médico</span> para automatizar tu consultorio</h1>
+          <h1>Tu <span className="servicios-text-primary-color">AI Partner Médico</span> para automatizar tu consultorio o clínica</h1>
           <img src="/assets/images/profecional-img1.png" alt="Automatización Médica" className="servicios-hero-service-image" />
           <p className="servicios-hero-subtitle">
             Somos tu <strong>Chief AI Officer</strong> fraccional: automatizamos <strong>WhatsApp</strong>, <strong>citas</strong>, <strong>pagos</strong>, <strong>seguimientos</strong> y más en menos de 7 días.
@@ -104,7 +104,7 @@ const Servicios = () => {
         <div className="servicios-container">
           <h2 className="servicios-cta-title">¿Vas a seguir <span style={{color: 'rgba(255,255,255,0.9)'}}>perdiendo pacientes</span>?</h2>
           <p className="servicios-cta-texto"><strong>Interconecta</strong> lo automatiza todo por ti. Solo necesitas <strong>30 minutos</strong> para arrancar.</p>
-          <Link to="/reuniones" className="servicios-btn servicios-btn-primary servicios-btn-large">Solicitar diagnóstico gratuito</Link>
+          <Link to="/reuniones" className="servicios-btn servicios-btn-primary servicios-btn-large">Solicitar diagnóstico operativo gratuito</Link>
         </div>
       </section>
     </div>

@@ -445,7 +445,7 @@ const ConsultoriosPlanes = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <h2>Resultados Garantizados para Médicos</h2>
+        <h2>Resultados Garantizados para Profesionales de la Salud</h2>
         <div className="roi-grid">
           {roiData.map((item, index) => (
             <motion.div 
@@ -893,7 +893,7 @@ const ConsultoriosPlanes = () => {
         <div className="cta-content">
           <h2>🩺 ¿Listo para Evolucionar tu Consulta Médica?</h2>
           <p className="cta-description">
-            Únete a +50 médicos que ya automatizaron sus consultorios y recuperaron tiempo para sus pacientes
+            Únete a +50 profesionales de la salud que ya automatizaron sus consultorios y recuperaron tiempo para sus pacientes
           </p>
           
           <div className="cta-stats">
@@ -917,7 +917,7 @@ const ConsultoriosPlanes = () => {
               className="button primary-final"
             >
               <span className="button-icon">🩺</span> 
-              Diagnóstico Médico Gratuito
+              Diagnóstico Operativo Gratuito
             </a>
             <a 
               href="/Reuniones" 

@@ -56,7 +56,7 @@ const Process = () => {
 
         <div className="text-center implement-mt-50">
           <a href="/Reuniones" className="btn btn-primary">
-            Solicita tu diagnóstico gratuito en 15 minutos
+            Solicita tu diagnóstico gratuito en en menos de 1 minuto
           </a>
         </div>
       </div>
