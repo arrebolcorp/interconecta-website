@@ -103,7 +103,7 @@ const Servicios = () => {
       <section className="cta-section">
         <div className="container">
           <h2 className="cta-title">¿Vas a seguir <span className="text-primary">perdiendo pacientes</span>?</h2>
-          <p className="cta-text"><strong>Interconecta</strong> lo automatiza todo por ti. Solo necesitas <strong>1 hora</strong> para arrancar.</p>
+          <p className="cta-texto-servicios"><strong>Interconecta</strong> lo automatiza todo por ti. Solo necesitas <strong>30 minutos</strong> para arrancar.</p>
           <Link to="/reuniones" className="btn btn-primary btn-large">Solicitar diagnóstico gratuito</Link>
         </div>
       </section>

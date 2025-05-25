@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5 {
   background: rgba(255, 255, 255, 0.95);
 }
 
-.proof-number {
+.proof-number-climicas {
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -1315,7 +1315,7 @@ h1, h2, h3, h4, h5 {
   min-width: 140px;
 }
 
-.stat-number {
+.stat-number-blanco {
   font-size: 2.8rem;
   font-weight: 700;
   color: white;
@@ -1323,7 +1323,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Sora', sans-serif;
 }
 
-.stat-label {
+.stat-label-blanco {
   font-size: 0.9rem;
   opacity: 0.8;
   color: white;
@@ -1518,7 +1518,7 @@ h1, h2, h3, h4, h5 {
     font-size: 2.2rem;
   }
   
-  .proof-number {
+  .proof-number-climicas {
     font-size: 1.8rem;
   }
   

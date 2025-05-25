@@ -317,19 +317,19 @@ const ClinicasPlanes = () => {
           {/* Social Proof Clínicas */}
           <div className="clinicas-social-proof">
             <div className="social-proof-item">
-              <span className="proof-number">+25</span>
+              <span className="proof-number-clinicas">+25</span>
               <span className="proof-text">Clínicas automatizadas</span>
             </div>
             <div className="social-proof-item">
-              <span className="proof-number">500%</span>
+              <span className="proof-number-clinicas">500%</span>
               <span className="proof-text">ROI promedio clínicas</span>
             </div>
             <div className="social-proof-item">
-              <span className="proof-number">98%</span>
+              <span className="proof-number-clinicas">98%</span>
               <span className="proof-text">Coordinación perfecta</span>
             </div>
             <div className="social-proof-item">
-              <span className="proof-number">21 días</span>
+              <span className="proof-number-clinicas">21 días</span>
               <span className="proof-text">Implementación máxima</span>
             </div>
           </div>
@@ -937,20 +937,20 @@ const ClinicasPlanes = () => {
           
           <div className="cta-stats">
             <div className="stat">
-              <span className="stat-number">21 días</span>
-              <span className="stat-label">Implementación máxima</span>
+              <span className="stat-number-blanco">21 días</span>
+              <span className="stat-label-blanco">Implementación máxima</span>
             </div>
             <div className="stat">
-              <span className="stat-number">500%</span>
-              <span className="stat-label">ROI promedio clínicas</span>
+              <span className="stat-number-blanco">500%</span>
+              <span className="stat-label-blanco">ROI promedio clínicas</span>
             </div>
             <div className="stat">
-              <span className="stat-number">24/7</span>
-              <span className="stat-label">Coordinación automática</span>
+              <span className="stat-number-blanco">24/7</span>
+              <span className="stat-label-blanco">Coordinación automática</span>
             </div>
             <div className="stat">
-              <span className="stat-number">98%</span>
-              <span className="stat-label">Eficiencia especialidades</span>
+              <span className="stat-number-blanco">98%</span>
+              <span className="stat-label-blanco">Eficiencia especialidades</span>
             </div>
           </div>
 

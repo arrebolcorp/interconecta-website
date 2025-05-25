@@ -304,15 +304,15 @@ const ConsultoriosPlanes = () => {
           {/* Social Proof Médico */}
           <div className="medical-social-proof">
             <div className="social-proof-item">
-              <span className="proof-number">+50</span>
+              <span className="proof-number-consultorios">+50</span>
               <span className="proof-text">Médicos automatizados</span>
             </div>
             <div className="social-proof-item">
-              <span className="proof-number">400%</span>
+              <span className="proof-number-consultorios">400%</span>
               <span className="proof-text">ROI promedio primer mes</span>
             </div>
             <div className="social-proof-item">
-              <span className="proof-number">7 días</span>
+              <span className="proof-number-consultorios">7 días</span>
               <span className="proof-text">Implementación máxima</span>
             </div>
           </div>
@@ -898,16 +898,16 @@ const ConsultoriosPlanes = () => {
           
           <div className="cta-stats">
             <div className="stat">
-              <span className="stat-number">7 días</span>
-              <span className="stat-label">Implementación máxima</span>
+              <span className="stat-number-blanco">7 días</span>
+              <span className="stat-label-blanco">Implementación máxima</span>
             </div>
             <div className="stat">
-              <span className="stat-number">400%</span>
-              <span className="stat-label">ROI promedio</span>
+              <span className="stat-number-blanco">400%</span>
+              <span className="stat-label-blanco">ROI promedio</span>
             </div>
             <div className="stat">
-              <span className="stat-number">24/7</span>
-              <span className="stat-label">Tu IA médica trabajando</span>
+              <span className="stat-number-blanco">24/7</span>
+              <span className="stat-label-blanco">Tu IA médica trabajando</span>
             </div>
           </div>
 

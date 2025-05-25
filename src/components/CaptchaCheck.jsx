@@ -19,7 +19,7 @@ const CaptchaCheck = ({ onSuccess }) => {
 
   return (
     <div className="captcha-box">
-      <button onClick={handleClick} className="verificacion-button">
+      <button onClick={handleClick} className="btn-primary">
         Soy humano, mostrar reuniones
       </button>
       <ReCAPTCHA
