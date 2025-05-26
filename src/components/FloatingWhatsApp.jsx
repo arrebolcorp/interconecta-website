@@ -10,7 +10,7 @@ const CTA_MESSAGES = [
 ];
 
 const FloatingWhatsApp = () => {
-  const phoneNumber = "5215519686023";
+  const phoneNumber = "5215651622408"; // Número de WhatsApp en formato internacional
   const [showBubble, setShowBubble] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
 

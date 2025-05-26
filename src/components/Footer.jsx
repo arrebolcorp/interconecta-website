@@ -34,7 +34,7 @@ const Footer = () => {
               <h4 className="footer-heading">Contacto</h4>
               <ul className="footer-contact-info">
                 <li><a href="mailto:hola@interconecta.capital">hola@interconecta.capital</a></li>
-                <li><a href="tel:+525512345678">+52 55 1968 6023</a></li>
+                <li><a href="tel:+525512345678">+52 56 5162 2408</a></li>
                 <li>Ciudad de México, México</li>
               </ul>
             </div>

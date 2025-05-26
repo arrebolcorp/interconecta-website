@@ -283,6 +283,7 @@ const ClinicasPlanes = () => {
         <a 
           href={`https://wa.me/+525519686023?text=Hola,%20somos%20una%20clínica%20médica%20y%20nos%20interesa%20el%20${info.nombre}%20para%20coordinar%20nuestras%20especialidades.%20¿Podemos%20agendar%20diagnóstico%20gratuito?`} 
           className="cta-button clinicas" 
+          target="_blank" rel="noopener noreferrer"
           style={{ backgroundColor: info.color }}
         >
           🏥 Diagnóstico Clínica Gratuito
@@ -958,6 +959,7 @@ const ClinicasPlanes = () => {
             <a 
               href="https://wa.me/+525519686023?text=Hola,%20somos%20una%20clínica%20médica%20y%20queremos%20automatizar%20la%20coordinación%20entre%20nuestras%20especialidades%20con%20IA.%20¿Podemos%20agendar%20diagnóstico%20gratuito?" 
               className="button primary-final"
+              target="_blank" rel="noopener noreferrer"
             >
               <span className="button-icon">🏥</span> 
               Diagnóstico Clínica Gratuito
