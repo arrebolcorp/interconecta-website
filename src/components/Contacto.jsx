@@ -199,7 +199,7 @@ const Contact = () => {
 
                   <div className="interconecta-form-group">
                     <a
-                      href="https://wa.me/525651622408?text=Hola%2C%20me%20gustar%C3%ADa%20tener%20una%20demostraci%C3%B3n%20de%20lo%20que%20es%20Interconecta%20%C2%BFc%C3%B3mo%20podemos%20conocer%20sus%20productos%3F" 
+                      href="https://wa.me/+525651622408?text=Hola%2C%20me%20gustar%C3%ADa%20tener%20una%20demostraci%C3%B3n%20de%20lo%20que%20es%20Interconecta%20%C2%BFc%C3%B3mo%20podemos%20conocer%20sus%20productos%3F" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="interconecta-btn interconecta-btn-whatsapp interconecta-btn-full"

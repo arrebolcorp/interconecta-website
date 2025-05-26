@@ -522,7 +522,7 @@ const PlanesGeneral = () => {
 
           <div className="final-cta-buttons">
             <a 
-              href="https://wa.me/+525519686023?text=Hola,%20soy%20médico%20y%20quiero%20automatizar%20mi%20práctica%20con%20IA.%20¿Podemos%20agendar%20diagnóstico%20gratuito?" 
+              href="https://wa.me/+525651622408?text=Hola,%20soy%20médico%20y%20quiero%20automatizar%20mi%20práctica%20con%20IA.%20¿Podemos%20agendar%20diagnóstico%20gratuito?" 
               className="button primary-final"
               target="_blank"
               rel="noopener noreferrer"

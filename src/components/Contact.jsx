@@ -199,7 +199,7 @@ const Contact = () => {
 
                   <div className="interconecta-form-group">
                     <a
-                      href="https://wa.me/5215519686023?text=Hola, quiero automatizar mi consultorio con Interconecta"
+                      href="https://wa.me/525651622408?text=Hola, quiero automatizar mi consultorio con Interconecta"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="interconecta-btn interconecta-btn-whatsapp interconecta-btn-full"

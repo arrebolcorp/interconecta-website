@@ -268,7 +268,7 @@ const ConsultoriosPlanes = () => {
 
       <div className="plan-cta-section">
         <a 
-          href={`https://wa.me/+525519686023?text=Hola,%20soy%20médico%20y%20me%20interesa%20el%20${info.nombre}%20para%20automatizar%20mi%20consultorio.%20¿Podemos%20agendar%20diagnóstico%20gratuito?`} 
+          href={`https://wa.me/+525651622408?text=Hola,%20soy%20médico%20y%20me%20interesa%20el%20${info.nombre}%20para%20automatizar%20mi%20consultorio.%20¿Podemos%20agendar%20diagnóstico%20gratuito?`} 
           target="_blank" rel="noopener noreferrer"
           className="cta-button modern" 
           style={{ backgroundColor: info.color }}
@@ -914,7 +914,7 @@ const ConsultoriosPlanes = () => {
 
           <div className="cta-buttons-final">
             <a 
-              href="https://wa.me/+525519686023?text=Hola,%20soy%20médico%20y%20quiero%20automatizar%20mi%20consultorio%20con%20IA.%20¿Podemos%20agendar%20un%20diagnóstico%20gratuito?" 
+              href="https://wa.me/+525651622408?text=Hola,%20soy%20médico%20y%20quiero%20automatizar%20mi%20consultorio%20con%20IA.%20¿Podemos%20agendar%20un%20diagnóstico%20gratuito?" 
               target="_blank" rel="noopener noreferrer"
               className="button primary-final"
             >
