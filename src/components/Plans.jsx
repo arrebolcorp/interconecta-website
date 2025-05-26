@@ -213,7 +213,7 @@ const Plans = () => {
         </div>
 
         <div className="text-center mt-50">
-          <a href="#contacto" className="btn btn-primary">Quiero automatizar mi consultorio</a>
+          <a href="/plaenes-general" className="btn btn-primary">Quiero automatizar mi consultorio</a>
         </div>
       </div>
     </section>
