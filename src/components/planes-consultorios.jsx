@@ -470,8 +470,6 @@ const ConsultoriosPlanes = () => {
         </div>
       </motion.div>
 
-      // Agregar estas dos secciones DESPUÉS de la sección ROI y ANTES de la sección de Integraciones en tu archivo planes-consultorios.jsx
-
       {/* Especialidades de Consultorios Soportadas */}
       <motion.div 
         className="specialties-section medical"

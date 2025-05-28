@@ -29,7 +29,7 @@ const Hero = ({ variant = "gradient" }) => {
           </p>
           <div className="hero-ai-cta">
             <a href="#planes" className="btn-primary">Diagnóstico gratuito 30 min</a>
-            <a href="https://wa.me/5215519686023?text=Hola, soy médico y quiero automatizar mi consultorio. ¿Pueden ayudarme?" className="btn-outlinex">👩‍⚕️ Chatea con un agente</a>
+            <a href="https://wa.me/525651622408?text=Hola, soy médico y quiero automatizar mi consultorio. ¿Pueden ayudarme?" className="btn-outlinex">👩‍⚕️ Chatea con un agente</a>
           </div>
 
           <div className="hero-ai-trust">

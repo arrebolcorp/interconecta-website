@@ -6,9 +6,9 @@ const PayPalButton = ({ planId, planName }) => {
 
   // Mapeo de planes a IDs de PayPal
   const planIds = {
-    impulso: 'P-7YE206551L679143TNA3RWFI',
-    crecimiento: 'P-XXXXXXXXXXXXXXXXX', // Reemplaza con tu ID real
-    dominio: 'P-YYYYYYYYYYYYYYYYY'      // Reemplaza con tu ID real
+    impulso: 'P-3GS347726E809145GNA3RUAY',
+    crecimiento: 'P-0GT94177R8059093FNA3S6GY', // Reemplaza con tu ID real
+    dominio: 'P-7YE206551L679143TNA3RWFI'      // Reemplaza con tu ID real
   };
 
   useEffect(() => {
