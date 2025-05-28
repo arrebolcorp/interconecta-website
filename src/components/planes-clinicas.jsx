@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../assets/css/planes-clinicas.css';
+import PayPalButton from './PayPalButton'; // Ajusta la ruta según tu estructura
 
 const ClinicasPlanes = () => {
   const [activeTab, setActiveTab] = useState('impulso');
@@ -219,80 +220,90 @@ const ClinicasPlanes = () => {
     }
   ];
 
-  const PlanCard = ({ plan, info, isActive }) => (
-    <motion.div 
-      className={`plan-card clinicas ${plan} ${isActive ? 'active' : ''}`}
-      initial="hidden"
-      animate="visible"
-      variants={scaleIn}
-      whileHover={{ y: -10, transition: { duration: 0.3 } }}
-      style={{
-        borderColor: isActive ? info.color : '#E5E7EB',
-        backgroundColor: 'white',
-        boxShadow: isActive ? `0 20px 40px ${info.color}30` : '0 4px 20px rgba(0,0,0,0.1)'
-      }}
-    >
-      {info.badge && (
-        <div className="plan-badge" style={{ backgroundColor: info.color }}>
-          {info.badge}
-        </div>
-      )}
-      
-      <div className="plan-header" style={{ backgroundColor: info.bgColor }}>
-        <div className="plan-icon">{info.icono}</div>
-        <h3>{info.nombre}</h3>
-        <p className="plan-description">{info.descripcion}</p>
-        <div className="specialists-info">
-          <span className="specialists-count">{info.especialistas}</span>
-        </div>
-      </div>
+  
 
-      <div className="plan-pricing">
-        <div className="price-container">
-          <span className="plan-price">{info.precio}</span>
-          <span className="plan-period"> MXN/mes</span>
-        </div>
-        <div className="setup-info">
-          <span className="setup-included">Setup: {info.setup}</span>
-          {info.originalSetup && (
-            <span className="setup-original">Antes: {info.originalSetup}</span>
-          )}
-        </div>
-        <p className="price-note">+ I.V.A. | Contratos anuales con descuento</p>
+  // Actualiza tu componente PlanCard
+const PlanCard = ({ plan, info, isActive }) => (
+  <motion.div 
+    className={`plan-card clinicas ${plan} ${isActive ? 'active' : ''}`}
+    initial="hidden"
+    animate="visible"
+    variants={scaleIn}
+    whileHover={{ y: -10, transition: { duration: 0.3 } }}
+    style={{
+      borderColor: isActive ? info.color : '#E5E7EB',
+      backgroundColor: 'white',
+      boxShadow: isActive ? `0 20px 40px ${info.color}30` : '0 4px 20px rgba(0,0,0,0.1)'
+    }}
+  >
+    {info.badge && (
+      <div className="plan-badge" style={{ backgroundColor: info.color }}>
+        {info.badge}
       </div>
-
-      <div className="plan-benefits">
-        <p className="value-prop" style={{ color: info.color }}>
-          {info.solucion}
-        </p>
-        <ul className="features-list">
-          {info.caracteristicas.map((feature, index) => (
-            <motion.li 
-              key={index}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              {feature}
-            </motion.li>
-          ))}
-        </ul>
+    )}
+    
+    <div className="plan-header" style={{ backgroundColor: info.bgColor }}>
+      <div className="plan-icon">{info.icono}</div>
+      <h3>{info.nombre}</h3>
+      <p className="plan-description">{info.descripcion}</p>
+      <div className="specialists-info">
+        <span className="specialists-count">{info.especialistas}</span>
       </div>
+    </div>
 
-      <div className="plan-cta-section">
-        <a 
-          href={`https://wa.me/+525651622408?text=Hola,%20somos%20una%20clínica%20médica%20y%20nos%20interesa%20el%20${info.nombre}%20para%20coordinar%20nuestras%20especialidades.%20¿Podemos%20agendar%20diagnóstico%20gratuito?`} 
-          className="cta-button clinicas" 
-          target="_blank" rel="noopener noreferrer"
-          style={{ backgroundColor: info.color }}
-        >
-          🏥 Diagnóstico Clínica Gratuito
-        </a>
-        <p className="cta-subtitle">Implementación en {plan === 'impulso' ? '7' : plan === 'crecimiento' ? '14' : '21'} días</p>
+    <div className="plan-pricing">
+      <div className="price-container">
+        <span className="plan-price">{info.precio}</span>
+        <span className="plan-period"> MXN/mes</span>
       </div>
-    </motion.div>
-  );
+      <div className="setup-info">
+        <span className="setup-included">Setup: {info.setup}</span>
+        {info.originalSetup && (
+          <span className="setup-original">Antes: {info.originalSetup}</span>
+        )}
+      </div>
+      <p className="price-note">+ I.V.A. | Contratos anuales con descuento</p>
+    </div>
 
+    <div className="plan-benefits">
+      <p className="value-prop" style={{ color: info.color }}>
+        {info.solucion}
+      </p>
+      <ul className="features-list">
+        {info.caracteristicas.map((feature, index) => (
+          <motion.li 
+            key={index}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {feature}
+          </motion.li>
+        ))}
+      </ul>
+    </div>
+
+    <div className="plan-cta-section">
+      <a 
+        href={`https://wa.me/+525651622408?text=Hola,%20somos%20una%20clínica%20médica%20y%20nos%20interesa%20el%20${info.nombre}%20para%20coordinar%20nuestras%20especialidades.%20¿Podemos%20agendar%20diagnóstico%20gratuito?`} 
+        className="cta-button clinicas" 
+        target="_blank" rel="noopener noreferrer"
+        style={{ backgroundColor: info.color }}
+      >
+        🏥 Diagnóstico Clínica Gratuito
+      </a>
+      <p className="cta-subtitle">Implementación en {plan === 'impulso' ? '7' : plan === 'crecimiento' ? '14' : '21'} días</p>
+    </div>
+
+    {/* Integración del botón PayPal */}
+    <div className="plan-payment-section">
+      <PayPalButton 
+        planId={plan} 
+        planName={info.nombre}
+      />
+    </div>
+  </motion.div>
+);
   return (
     <div className="planes-clinicas-container modern">
       {/* Hero Section Clínicas */}
@@ -983,3 +994,4 @@ const ClinicasPlanes = () => {
 };
 
 export default ClinicasPlanes;
+

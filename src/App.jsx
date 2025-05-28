@@ -20,6 +20,8 @@ import Faq from "./components/faq";
 import Contacto from "./components/Contacto";
 import ScrollToTop from './components/ScrollToTop'; // Ajusta la ruta según tu estructura
 import PlanesGeneral from './components/planes-general';
+import PayPalButton from './components/PayPalButton'; // Ajusta la ruta según tu estructura
+ 
 
 
 function App() {
@@ -49,6 +51,7 @@ function App() {
         <Route path="/planes-general" element={<PlanesGeneral />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/reuniones" element={<Reuniones />} />
+        <Route path="/paypal-button" element={<PayPalButton planId="impulso" planName="Impulso" />} />
         <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer />
